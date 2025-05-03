@@ -1,4 +1,4 @@
-const express  =require("express");
+const express  = require("express");
 require('dotenv').config();
 const app = express();
 const router = require("./router/auth-router")
@@ -25,6 +25,6 @@ const PORT =5000
 
 connectDb().then(() =>{
 app.listen(PORT, () =>{
-    console.log("server is running",PORT)
+    console.log("server is running on",PORT)
 })
 });
